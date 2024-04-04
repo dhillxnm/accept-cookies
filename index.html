@@ -17,6 +17,63 @@
     <script src="./assets/script/index.js" type="module"></script>
   </head>
   <body>
-
+    <main class="main">
+       <div class="container">
+          <div class="text">
+               <p> A <span class="green">Cookie</span> is a small piece of data stored on the user's computer by the web browser. 
+                Cookies are often used to <span class="red"> store information</span> about the user or their preferences, 
+                and they can be accessed and modified through <span class="purple">Javascript</span>
+               </p>
+           </div>
+       </div>
+    </main>
+    <div class="blur"></div>
+    <div class="dialog first hidden"> 
+        <h2>Cookies</h2>
+        <p>We use cookies to improve your experience on our website.By clicking "accept" 
+           you agree to use cookies for marketing and analysis purposes
+        </p>
+        <div class="buttons-section flex gap-12">
+            <button class="buttons accept">Accept</button>
+            <button class="buttons settings">Settings</button>
+        </div>
+    </div>
+    <div class="dialog second hidden">
+        <h2>Settings</h2>
+        <div class="options">
+            <div class="toggle option-one">
+                <label class="title">Browser</label>
+                <label class="switch">
+                    <input type="checkbox" class="cookie" value="browser">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="toggle option-two">
+                <label class="title">Operating System</label>
+                <label class="switch">
+                    <input type="checkbox" class="cookie" value="Operating System">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="toggle option-three">
+                <label class="title">Screen width</label>
+                <label class="switch">
+                    <input type="checkbox" class="cookie" value="Screen width">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="toggle option-four">
+                <label class="title">Screen height</label>
+                <label class="switch">
+                    <input type="checkbox" class="cookie" value="Screen height">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <button class="save-button">Save preferences</button>
+    </div>
+   
   </body>
 </html>
+
+

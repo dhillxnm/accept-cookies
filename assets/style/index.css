@@ -1,1 +1,288 @@
 @charset "utf-8";
+
+
+body {
+    height: 100dvh;
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
+    background-color: #171820;
+    color: #fff;
+}
+
+
+main {
+    height: 100dvh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: min(100% - 30px,1080px);
+    margin-inline:auto;
+    height: 100%;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-------------------Utility Classes-----------------------------*/
+/*---------------------------------------------------------------*/
+
+
+.flex {
+    display: flex;
+}
+
+
+.space-between {
+    justify-content: space-between;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/*---------------------------------------------------------------*/
+/*-----------------------paragraph-------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+.green{
+    color: #32cd32;
+}
+
+.red{
+    color: #ff051e;
+}
+
+.purple{
+    color: #8d54c6;
+}
+
+
+.text {
+    font-size: 30px;
+}
+
+
+/*---------------------------------------------------------------*/
+/*-----------------------dialog-box------------------------------*/
+/*---------------------------------------------------------------*/
+
+
+.dialog p {
+    padding-top: 5px;
+}
+
+
+.dialog{
+    width: 290px;
+    height: 313px;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;  
+    padding: 20px;
+    transform: translate(-50%, -40%);
+    transition: transform 1s;
+}
+
+
+.buttons {
+    width: 123px;
+    height: 44px;
+    margin-top: 60px;
+    border-radius: 33px;
+    font-size: 17px;
+    border: 1px solid #3C57FF;
+}
+
+
+.accept {
+    background-color: #3C57FF;
+    color: white;
+}
+
+
+.settings {
+    color: #3C57FF;
+    background-color: white;
+}
+
+
+.accept:hover {
+    background-color: rgb(60 87 255/0.9);
+}
+
+
+/*---------------------------------------------------------------*/
+/*-----------------------rounded-slider--------------------------*/
+/*---------------------------------------------------------------*/
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input:checked + .slider {
+    background-color: #008b8b;
+}
+ 
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #008b8b;
+}
+  
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+
+.slider.round {
+    border-radius: 34px;
+    background-color: #833CFF;
+}
+  
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.toogle-button {
+    margin: 15px 0px 15px 0px;
+}
+
+
+.toogle-button .title{
+    font-size: 17px;
+}
+
+.save-button{
+    height: 50px;
+    width: 180px;
+    border-radius: 50px;
+    font-size: 17px;
+    margin-top: 10px;
+    background-color: rgb(60, 87, 255);
+    color: #fff;   
+}
+
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.toggle {
+    display: flex;
+}
+
+
+.option-one {
+    gap: 132px;
+}
+
+
+.option-two {
+    gap: 60px;
+}
+
+
+.option-three {
+    gap: 95px;
+}
+
+
+.option-four {
+    gap: 91px;
+}
+
+
+.visible{
+    visibility: visible;
+    transform: translate(-50%, -50%);  
+    opacity: 1;  
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.opacity-visible{
+    opacity: 0.5;
+}
+
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}
+
+
+.blur.isvisible {
+    visibility: visible;
+    opacity: 1;
+}
